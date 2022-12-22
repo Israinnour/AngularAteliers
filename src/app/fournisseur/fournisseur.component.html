@@ -1,0 +1,11 @@
+
+
+
+<div class="back">
+  <ul *ngFor="let fournisseur of Fournisseur">
+    <li>IdFournisseur : {{fournisseur.idFournisseur}}</li>
+    <li>Code : {{fournisseur.code}}</li>
+    <li>Libelle : {{fournisseur.libelle}}</li>
+  </ul>
+</div>
+<button (click)="cacher()">cacher</button>
