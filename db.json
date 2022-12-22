@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "invoicee":[{
+    "idInvoice" : "1",
+    "discountAmount": "235",
+    "billAmount": "451",
+    "dateBill" : "12/12/2022",
+    "Status": "true"
+  },
+{
+  "idInvoice" : "2",
+    "discountAmount": "235",
+    "billAmount": "451",
+    "dateBill" : "12/12/2022",
+    "Status": "false"
+}]
+}
