@@ -7,13 +7,21 @@ import { FournisseurComponent } from './fournisseur/fournisseur.component';
 import { ListFournisseurComponent } from './list-fournisseur/list-fournisseur.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
+import { InvoiceListComponent } from './invoice-list/invoice-list.component';
+import { InvoiceComponent } from './invoice/invoice.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FournisseurComponent,
     ListFournisseurComponent,
-    ListProduitComponent
+    ListProduitComponent,
+    MainInvoiceComponent,
+    InvoiceListComponent,
+    InvoiceComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
