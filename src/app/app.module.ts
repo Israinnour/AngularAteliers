@@ -11,6 +11,8 @@ import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
 import { InvoiceListComponent } from './invoice-list/invoice-list.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { HeaderComponent } from './header/header.component';
+import { AddProductRFComponent } from './add-product-rf/add-product-rf.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { HeaderComponent } from './header/header.component';
     MainInvoiceComponent,
     InvoiceListComponent,
     InvoiceComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddProductRFComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

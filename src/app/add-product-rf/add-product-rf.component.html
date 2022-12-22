@@ -1,0 +1,25 @@
+<form [formGroup]="reactiveForm">
+  <div class="form-group">
+  <label for="">IdProduit</label><br>
+  <input type="text" name="idProduit" formControlName="idProduit" ><br>
+ 
+  <label for="">Code</label><br>
+  <input type="text" formControlName="code"><br>
+  <label for="">Libelle</label><br>
+  <input type="text" formControlName="libelle"><br>
+  <label for="">Prix Unitaire</label><br>
+  <input type="text" formControlName="prixUnitaire"><br>
+  <button>Suivant</button><br>
+  <label for="">Id Détails Produit</label><br>
+  <input type="text" formControlName="idDP"><br>
+  <label for="">Date création</label><br>
+  <input type="text" formControlName="DC"><br>
+  <label for="">Date dérniere modification</label><br>
+  <input type="text" formControlName="DDM"><br>
+  <label for="">Catégorie Produit</label><br><select>
+  <option value="Electromenager">Electromenager</option>
+  <option value="Alimentaire">Alimentaire</option>
+  <option value="Quincaillerie">Quincaillerie</option>
+</select>
+</div>
+</form>
