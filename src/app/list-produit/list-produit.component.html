@@ -1,6 +1,35 @@
-<div *ngFor="let p of listProduit">
-<li>{{p.code}}</li>
-<li>{{p.idProduit}}</li>
-<li>{{p.libelle}}</li>
-<li>{{p.prixUnitaire}}</li>
+<h3>Recherche Produit</h3>
+Code : <input type="search" >
+<h3>List Produits</h3>
+<div  *ngFor="let p of listProduit">
+  <ng-container *ngIf="p.tauxTVA===0.02; then first else second"></ng-container>
+  <ng-template #first><li>{{p.idProduit}}.Produit:{{p.libelle}} <button disabled>Ajouter TVA</button></li>
+  </ng-template>
+  <ng-template #second>
+    <li>{{p.idProduit}}.Produit:{{p.libelle}}
+      <button (click)="updateTVA()">Ajouter TVA</button>
+    </li>
+  </ng-template>
+<ul>
+<!--div *ngIf="p.prixUnitaire <= 50" >
+  <div [ngStyle]="{'color':'blue'} && {'font-size':'20px'} && {'font-style' : 'italic'}" -->
+  <li>Identifiant : {{p.idProduit}}</li>
+  <li>Code : {{p.code}}</li>
+  <li>Prix Unitaire : {{p.prixUnitaire}}</li>
+  <li>Taux TVA : {{p.tauxTVA}}</li>
+</ul>
+</div>
+<h3>Ajouter Produit</h3>
+<div>
+  <label for="idProduit">IdProduit : </label>
+  <input type="number"><br>
+  <label for="code">Code : </label>
+  <input type="text"><br>
+  <label for="libelle">Libelle : </label>
+  <input type="text"><br>
+  <label for="prixUnitaire">PrixUnitaire : </label>
+  <input type="number"><br>
+  <label for="tauxTVA">TauxTVA : </label>
+  <input type="number"><br>
+  <button (click)="ajouter()">Ajouter</button>
 </div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FournisseurComponent } from './fournisseur/fournisseur.component';
 import { ListFournisseurComponent } from './list-fournisseur/list-fournisseur.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListProduitComponent } from './list-produit/list-produit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
