@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Invoice } from 'src/models/invoicee';
+import { Invoice } from 'src/models/Invoicee';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InvoceServiceService {
-  url :string="/api/invoices";
+  url = "http://localhost:3000/invoicee";
   constructor(private http:HttpClient) { }
   getAll(){
     return this.http.get<Invoice[]>(this.url);

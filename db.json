@@ -29,5 +29,13 @@
     "billAmount": "451",
     "dateBill" : "12/12/2022",
     "Status": "false"
-}]
+}],
+"invoices" : [
+  { "id": 1, "discountAmount": 20, "billAmount": 500, "dateBill":
+  "14/07/2021" , "Status" : true},
+  { "id": 2, "discountAmount": 10, "billAmount": 1000, "dateBill":
+  "02/10/2020" , "Status" : false},
+  { "id": 3, "discountAmount": 50, "billAmount": 200, "dateBill":
+  "15/12/2021" , "Status" : false},
+  ]
 }

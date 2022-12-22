@@ -13,6 +13,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { HeaderComponent } from './header/header.component';
 import { AddProductRFComponent } from './add-product-rf/add-product-rf.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InvoiceModuleModule } from './invoice-module/invoice-module.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InvoiceModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
